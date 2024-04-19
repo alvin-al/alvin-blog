@@ -4,7 +4,7 @@ import List from "./List";
 const CategoryList = () => {
   
   return (
-    <div>
+    <div className="mb-8">
       <h2 className="text-3xl mb-4">Popular Category</h2>
       <div className="flex flex-row gap-4 w-full flex-wrap">
         <List src="/" title="Fashion" img="/youtube.png" />

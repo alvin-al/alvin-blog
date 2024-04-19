@@ -11,7 +11,7 @@ export default function Home() {
     <main>
       <Featured />
       <CategoryList /> 
-      <div className="flex border">
+      <div className="flex gap-8 mb-96">
         <CardList />
         <Menu />
       </div>

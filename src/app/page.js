@@ -13,6 +13,7 @@ export default function Home() {
       <CategoryList /> 
       <div className="flex gap-8 mb-96">
         <CardList />
+        <div className="w-[1px] h-96 bg-slate-800"></div>
         <Menu />
       </div>
     </main>

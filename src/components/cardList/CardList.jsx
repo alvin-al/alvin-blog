@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "../card/Card";
+import Pagenation from "../pagenation/Pagenation";
 
 const CardList = () => {
   const card1 = {
@@ -21,7 +22,9 @@ const CardList = () => {
           <Card src={card1.src} title={card1.title} date={card1.date} desc={card1.desc} category={card1.category}/>
           <Card src={card1.src} title={card1.title} date={card1.date} desc={card1.desc} category={card1.category}/>
         </div>
-        
+        <div className="mt-12">
+          <Pagenation />
+        </div>
     </div>
   );
 };

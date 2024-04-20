@@ -1,10 +1,11 @@
 import React from "react";
 import Link from 'next/link'
+import { signIn } from "../../utils/auth";
 
 const AuthLinks = () => {
     //temporary
 
-    const status = "authenticated";
+    const status = "notauthenticated";
 
     return <>
         {status === "notauthenticated" ? (

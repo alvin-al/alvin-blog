@@ -4,7 +4,7 @@ import Link from 'next/link'
 const AuthLinks = () => {
     //temporary
 
-    const status = "notauthenticated";
+    const status = "authenticated";
 
     return <>
         {status === "notauthenticated" ? (

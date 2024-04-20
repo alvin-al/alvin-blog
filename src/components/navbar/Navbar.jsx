@@ -12,7 +12,7 @@ const Navbar = () => {
             <Image src="/tiktok.png" alt="tiktok" width={32} height={32} />
             <Image src="/youtube.png" alt="youtube" width={32} height={32} />
         </div>
-        <div><h1 className="font-black text-2xl">Alvin Blog</h1></div>
+        <div><h1 className="font-black text-2xl"><Link href="/">Alvin Blog</Link></h1></div>
         <div className="flex gap-4 items-center"> 
             <Link href="/">Home</Link>
             <Link href="/">About</Link>

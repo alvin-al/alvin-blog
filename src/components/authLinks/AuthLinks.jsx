@@ -1,22 +1,25 @@
 import React from "react";
 import Link from 'next/link'
+import { signOut } from "../../../auth";
+import { auth } from "/auth"
 
-const AuthLinks = () => {
-    //temporary
-
-    const status = "notauthenticated";
+export default async function AuthLinks(){
+    const session = await auth()
 
     return <>
-        {status === "notauthenticated" ? (
+        {!session ? (
             <Link href="/login">Login</Link>
         ) : (
             <>
                 <Link href="/write">Write</Link>
-                <span>Logout</span>
+                <form action={async () => {
+                    "use server"
+                    await signOut()
+                }}>
+                    <button>Sign Out</button>
+                </form>
             </>
         )
         }
     </>
-};
-
-export default AuthLinks;
+}

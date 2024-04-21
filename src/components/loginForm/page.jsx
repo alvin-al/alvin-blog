@@ -1,17 +1,17 @@
+'use client'
 import React from "react";
 import Image from 'next/image'
-import { signIn } from "@/utils/auth";
 
 
 const LoginForm = () => {
+
+  
+  
   return(
 
 
     <div className="w-[400px] m-auto bg-gray-100 rounded-xl h-[400px] flex flex-col justify-center items-center gap-4 mt-20">
-        <form action={async () => {
-                "use server"
-                await signIn("google")
-            }}>
+        <form>
             <button type="submit" className="border w-[250px] py-3 bg-blue-200 hover:bg-blue-300 rounded-md font-medium flex justify-center items-center gap-2">
                 <span><Image src="/google_logo.svg" alt="google" width={24} height={24} /></span>
                 <span>Sign in with Google</span>

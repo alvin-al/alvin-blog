@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "../card/Card";
-import Pagenation from "../pagenation/Pagenation";
+import Pagenation from "../post/pagenation/Pagenation";
 
 const CardList = () => {
   const card1 = {

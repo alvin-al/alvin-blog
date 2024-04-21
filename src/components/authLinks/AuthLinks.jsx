@@ -1,6 +1,5 @@
 import React from "react";
 import Link from 'next/link'
-import { signIn } from "../../utils/auth";
 
 const AuthLinks = () => {
     //temporary
@@ -16,13 +15,8 @@ const AuthLinks = () => {
                 <span>Logout</span>
             </>
         )
-
         }
-
     </>
-
-
-
 };
 
 export default AuthLinks;

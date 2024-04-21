@@ -13,7 +13,7 @@ const Navbar = () => {
             <Image src="/youtube.png" alt="youtube" width={32} height={32} />
         </div>
         <div className="w-1/3 justify-center flex"><h1 className="font-black text-2xl"><Link href="/">Alvin Blog</Link></h1></div>
-        <div className="flex gap-4 items-center justify-end w-1/3 border"> 
+        <div className="flex gap-4 items-center justify-end w-1/3"> 
             <Link href="/">Home</Link>
             <Link href="/">About</Link>
             <AuthLinks />
